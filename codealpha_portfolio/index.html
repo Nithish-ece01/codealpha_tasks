@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | ECE Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+
+            <button id="menu-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="intro">HELLO, I'M</p>
+                <h1>Nithish <span>👋</span></h1>
+                <h2>ECE Student & Aspiring Web Developer</h2>
+                <p>
+                    I enjoy learning technology, building creative projects,
+                    and turning ideas into useful digital experiences.
+                </p>
+                <a href="#projects" class="btn">Explore My Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2>About Me</h2>
+            <p class="section-text">
+                I'm an Electronics and Communication Engineering student
+                interested in web development, electronics, and robotics.
+                I'm building my skills by creating practical projects and
+                learning something new every day.
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <p class="section-label">WHAT I'M LEARNING</p>
+            <h2>My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">VS Code</div>
+                <div class="skill-card">GitHub</div>
+                <div class="skill-card">Electronics</div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="section-label">MY RECENT WORK</p>
+            <h2>Featured Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-icon">🏍️</div>
+                    <h3>Bike & Car Image Gallery</h3>
+                    <p>
+                        A responsive image gallery featuring vehicle images,
+                        category filters, and an image lightbox.
+                    </p>
+                    <a href="https://nithish-ece01.github.io/image_gallery/"
+                       target="_blank" rel="noopener noreferrer">
+                        View Project ↗️
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🧮</div>
+                    <h3>Modern Calculator</h3>
+                    <p>
+                        A calculator built with HTML, CSS, and JavaScript,
+                        featuring arithmetic operations and keyboard support.
+                    </p>
+                    <a href="https://nithish-ece01.github.io/calculator/"
+                       target="_blank" rel="noopener noreferrer">
+                        View Project ↗️
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3>Robotics</h3>
+                    <p>
+                        I'm interested in electronics and robotics and plan
+                        to develop more projects as I learn.
+                    </p>
+                    <span class="coming-soon">More projects coming soon</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+            <p class="section-text">
+                Interested in technology or working on a project together?
+                Feel free to connect with me.
+            </p>
+            <a class="btn" href="mailto:nithish.r0108@gmail.com">
+                Email Me
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Nithish | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

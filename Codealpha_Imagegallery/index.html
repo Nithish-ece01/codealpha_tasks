@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bike & Car Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>BIKES <span>&</span> CARS</h1>
+        <p>Explore the world of machines</p>
+    </header>
+
+    <!-- Category filters -->
+    <nav class="filters">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="bike">BIKES</button>
+        <button class="filter-btn" data-filter="car">CARS</button>
+    </nav>
+
+    <!-- Image gallery -->
+    <main class="gallery">
+
+        <figure class="gallery-item bike">
+            <img
+                src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=900"
+                alt="Motorcycle"
+                loading="lazy">
+            <figcaption>Motorcycles</figcaption>
+        </figure>
+
+        <figure class="gallery-item bike">
+            <img
+                src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=900"
+                alt="Sports motorcycle"
+                loading="lazy">
+            <figcaption>Sports Bikes</figcaption>
+        </figure>
+
+        <figure class="gallery-item bike">
+            <img
+                src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=900"
+                alt="Sport bike"
+                loading="lazy">
+            <figcaption>Superbikes</figcaption>
+        </figure>
+
+        <figure class="gallery-item car">
+            <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900"
+                alt="Sports car"
+                loading="lazy">
+            <figcaption>Sports Cars</figcaption>
+        </figure>
+
+        <figure class="gallery-item car">
+            <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900"
+                alt="Luxury car"
+                loading="lazy">
+            <figcaption>Luxury Cars</figcaption>
+        </figure>
+
+        <figure class="gallery-item car">
+            <img
+                src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=900"
+                alt="Performance car"
+                loading="lazy">
+            <figcaption>Performance Cars</figcaption>
+        </figure>
+
+    </main>
+
+    <footer>
+        <p>Bike & Car Gallery | Created with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+        <button class="close-btn" id="closeBtn"
+                aria-label="Close image">&times;</button>
+
+        <button class="nav-btn prev-btn" id="prevBtn"
+                aria-label="Previous image">&#10094;</button>
+
+        <img id="lightboxImage" src="" alt="">
+
+        <button class="nav-btn next-btn" id="nextBtn"
+                aria-label="Next image">&#10095;</button>
+
+        <p class="image-counter" id="imageCounter"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+    
